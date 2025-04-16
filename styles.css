@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background: url('https://i.pinimg.com/originals/ff/22/36/ff2236e2a40e5102820ea2e02ca53e35.gif') no-repeat center center/cover;
+  color: #4a3425;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  width: 90%;
+  max-width: 320px; /* reduzido de 420px */
+  background: rgba(255, 245, 235, 0.6);
+  border-radius: 24px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: all 0.3s ease;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 1.5rem;
+}
+
+.brand {
+  font-size: 2.2rem;
+  margin: 0.5rem 0;
+  color: #3d2b1f;
+}
+
+.slogan {
+  margin: 0 0 2rem;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #7a5a44;
+}
+
+.links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  margin: 1rem 0;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #fff;
+  background: linear-gradient(135deg, #d7a184, #c08d75);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.links a:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  .brand {
+    font-size: 1.8rem;
+  }
+
+  .slogan {
+    font-size: 1rem;
+  }
+
+  .links a {
+    font-size: 0.95rem;
+    padding: 0.8rem 1rem;
+  }
+}
