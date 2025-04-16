@@ -7,36 +7,41 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 1rem;
 }
 
 .container {
   text-align: center;
   padding: 2rem 1.5rem;
-  width: 90%;
-  max-width: 320px; /* reduzido de 420px */
+  width: 100%;
+  max-width: 280px; /* largura menor */
+  min-height: 320px; /* altura maior */
   background: rgba(255, 245, 235, 0.6);
   border-radius: 24px;
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .logo {
-  width: 100px;
-  margin-bottom: 1.5rem;
+  width: 120px;
+  margin: 1rem auto 1rem;
 }
 
 .brand {
-  font-size: 2.2rem;
+  font-size: 2rem;
   margin: 0.5rem 0;
   color: #3d2b1f;
 }
 
 .slogan {
-  margin: 0 0 2rem;
+  margin-bottom: 2rem;
   font-style: italic;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #7a5a44;
 }
 
@@ -45,15 +50,15 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
-  margin: 1rem 0;
-  padding: 1rem 1.5rem;
+  margin: 0.7rem 0;
+  padding: 1rem 1rem;
   border-radius: 12px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: #fff;
   background: linear-gradient(135deg, #d7a184, #c08d75);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
 }
 
@@ -65,24 +70,25 @@ body {
 /* Responsivo */
 @media (max-width: 480px) {
   .container {
+    max-width: 95%;
+    min-height: 550px;
     padding: 1.5rem;
-    max-width: 90%;
   }
 
   .logo {
-    width: 80px;
+    width: 75px;
   }
 
   .brand {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .slogan {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .links a {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     padding: 0.8rem 1rem;
   }
 }
